@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blueprint Exteriors LLC | Roofing, Siding, Windows, Decks & Exterior Remodeling NJ</title>
-  <meta name="description" content="Blueprint Exteriors LLC provides premium exterior remodeling across North Jersey, including roofing, siding, windows, doors, decks, gutters, chimneys, masonry, and carpentry." />
+  <title>Blueprint Exteriors LLC | Exterior Remodeling Contractor in North Jersey</title>
+  <meta name="description" content="Blueprint Exteriors LLC provides roofing, siding, windows, doors, decks, masonry, gutters, chimneys, and exterior remodeling across Somerset County and North Jersey." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
@@ -13,8 +13,7 @@
 <body>
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Blueprint Exteriors home">
-      <span class="brand-mark"><span>B</span><span>E</span></span>
-      <span class="brand-text">Blueprint <strong>Exteriors</strong></span>
+      <img src="assets/images/logo-be.png" alt="Blueprint Exteriors LLC logo">
     </a>
     <nav class="nav-links" aria-label="Main navigation">
       <a href="#services">Services</a>
@@ -52,11 +51,15 @@
             <span>Workmanship Warranty</span>
           </div>
         </div>
+
         <aside id="quote" class="quote-card">
           <p class="eyebrow">Get a Free Estimate</p>
           <h2>Request a Quote</h2>
-          <p>Tell us about your project and we'll get back to you quickly.</p>
-          <form action="mailto:info@blueprintexteriorsllc.com" method="post" enctype="text/plain">
+          <p>Fill out the form and we'll get back to you quickly.</p>
+          <form action="https://formsubmit.co/info@blueprintexteriorsllc.com" method="POST">
+            <input type="hidden" name="_subject" value="New Blueprint Exteriors Website Lead">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
             <div class="form-row">
               <input name="name" placeholder="Full Name" required>
               <input name="phone" placeholder="Phone Number" required>
@@ -80,20 +83,18 @@
       </div>
     </section>
 
-    <section id="services" class="section services-section">
+    <section id="services" class="section services-photo-section">
       <div class="container section-heading center">
         <p class="eyebrow">Our Services</p>
         <h2>Complete Exterior Solutions</h2>
       </div>
-      <div class="container services-grid">
-        <article><div class="icon">⌂</div><h3>Roofing</h3><p>Roof replacements and repairs designed to protect your home.</p></article>
-        <article><div class="icon">▤</div><h3>Siding</h3><p>Durable siding systems that transform curb appeal.</p></article>
-        <article><div class="icon">□</div><h3>Windows</h3><p>Energy-efficient windows that improve comfort and style.</p></article>
-        <article><div class="icon">▯</div><h3>Doors</h3><p>Secure entry, patio, and exterior door installations.</p></article>
-        <article><div class="icon">╦</div><h3>Decks</h3><p>Custom decks and railings for outdoor living.</p></article>
-        <article><div class="icon">▦</div><h3>Masonry</h3><p>Stone, brick, chimneys, steps, and exterior masonry work.</p></article>
-        <article><div class="icon">▱</div><h3>Gutters</h3><p>Seamless gutter systems built to manage water properly.</p></article>
-        <article><div class="icon">▥</div><h3>Chimneys</h3><p>Chimney repairs and rebuilds that keep your home safe.</p></article>
+      <div class="container photo-services-grid">
+        <article style="--bg:url('assets/images/project-roof.jpg')"><div><h3>Roofing</h3><p>Roof replacements and repairs built to protect your home.</p></div></article>
+        <article style="--bg:url('assets/images/siding-chimney.jpg')"><div><h3>Siding</h3><p>Durable siding systems with clean trim details and curb appeal.</p></div></article>
+        <article style="--bg:url('assets/images/project-stone.jpg')"><div><h3>Windows & Doors</h3><p>Exterior openings finished with style, security, and efficiency.</p></div></article>
+        <article style="--bg:url('assets/images/project-deck.jpg')"><div><h3>Decks</h3><p>Custom decks, railings, and outdoor living upgrades.</p></div></article>
+        <article style="--bg:url('assets/images/paver-retaining-wall.jpg')"><div><h3>Masonry</h3><p>Stone, pavers, retaining walls, chimneys, and exterior masonry.</p></div></article>
+        <article style="--bg:url('assets/images/hardie-progress.jpg')"><div><h3>Exterior Builds</h3><p>Large-scale exterior work with professional project management.</p></div></article>
       </div>
     </section>
 
@@ -105,12 +106,24 @@
         </div>
         <a href="#quote" class="text-link">Request Similar Work →</a>
       </div>
-      <div class="container projects-grid">
-        <article class="project-card"><img src="assets/images/project-stone.jpg" alt="Stone and siding exterior renovation"><div><h3>Exterior Renovation</h3><p>Stone, siding, windows & curb appeal</p></div></article>
-        <article class="project-card"><img src="assets/images/project-deck.jpg" alt="Deck and paver patio project"><div><h3>Deck & Outdoor Living</h3><p>Deck, railings, pavers & backyard upgrade</p></div></article>
-        <article class="project-card"><img src="assets/images/project-roof.jpg" alt="Roof replacement project in Wayne New Jersey"><div><h3>Roof Replacement</h3><p>Wayne, NJ</p></div></article>
-        <article class="project-card"><img src="assets/images/project-siding.jpg" alt="Finished siding and exterior trim project"><div><h3>Siding & Trim</h3><p>Modern siding with clean trim details</p></div></article>
-        <article class="project-card"><img src="assets/images/project-front.jpg" alt="Finished residential exterior project"><div><h3>Full Exterior Upgrade</h3><p>Roofing, siding, gutters & finish details</p></div></article>
+      <div class="container projects-grid featured-projects">
+        <article class="project-card"><img src="assets/images/siding-chimney.jpg" alt="Siding and chimney exterior project"><div><h3>Siding & Trim Upgrade</h3><p>Modern exterior finish with clean trim details</p></div></article>
+        <article class="project-card"><img src="assets/images/before-after-exterior.jpg" alt="Before and after exterior transformation"><div><h3>Before & After Transformation</h3><p>Full exterior renovation and curb appeal upgrade</p></div></article>
+        <article class="project-card"><img src="assets/images/paver-retaining-wall.jpg" alt="Paver driveway and retaining wall project"><div><h3>Pavers & Retaining Wall</h3><p>Hardscape and masonry work built for strength</p></div></article>
+        <article class="project-card"><img src="assets/images/hardie-progress.jpg" alt="Large exterior siding project in progress"><div><h3>Large Exterior Build</h3><p>Siding, windows, wrap, trim, and exterior finish work</p></div></article>
+        <article class="project-card"><img src="assets/images/project-deck.jpg" alt="Deck and paver patio project"><div><h3>Deck & Outdoor Living</h3><p>Deck, railings, pavers, and backyard upgrade</p></div></article>
+      </div>
+    </section>
+
+    <section class="before-after-section">
+      <div class="container before-after-grid">
+        <div>
+          <p class="eyebrow">Real Transformations</p>
+          <h2>Before & After Work That Sells Itself.</h2>
+          <p>Homeowners want to see proof. This section highlights real exterior transformations completed by Blueprint Exteriors.</p>
+          <a class="btn" href="#quote">Request a Similar Project</a>
+        </div>
+        <img src="assets/images/before-after-exterior.jpg" alt="Before and after exterior renovation by Blueprint Exteriors">
       </div>
     </section>
 
@@ -128,7 +141,7 @@
           <span>✓ Respectful Job Sites</span>
         </div>
       </div>
-      <img src="assets/images/project-front.jpg" alt="Blueprint Exteriors finished home project">
+      <img src="assets/images/siding-chimney.jpg" alt="Finished siding and chimney project by Blueprint Exteriors">
     </section>
 
     <section id="reviews" class="section reviews-section">
@@ -158,7 +171,7 @@
   <footer id="contact" class="footer">
     <div class="container footer-grid">
       <div>
-        <a class="brand footer-brand" href="#home"><span class="brand-mark"><span>B</span><span>E</span></span><span class="brand-text">Blueprint <strong>Exteriors</strong></span></a>
+        <a class="footer-logo" href="#home"><img src="assets/images/logo-be.png" alt="Blueprint Exteriors LLC logo"></a>
         <p>Premium exterior remodeling across North Jersey.</p>
       </div>
       <div><h3>Services</h3><p>Roofing<br>Siding<br>Windows & Doors<br>Decks<br>Masonry<br>Gutters & Chimneys</p></div>

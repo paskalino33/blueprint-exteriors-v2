@@ -1,6 +1,6 @@
-# Blueprint Exteriors Homepage
+# Blueprint Exteriors Homepage Update V3
 
-Static homepage. No npm, no Next.js, no build step.
+Static website. No npm and no Next.js build.
 
 Vercel settings:
 - Framework Preset: Other
@@ -8,4 +8,8 @@ Vercel settings:
 - Build Command: leave blank
 - Output Directory: .
 
-Upload the contents of this folder to GitHub so `index.html`, `assets/`, and `README.md` are at the top level.
+## Contact Form
+The quote form is currently set to FormSubmit:
+`https://formsubmit.co/info@blueprintexteriorsllc.com`
+
+After deploying, submit a test form once. FormSubmit will send a confirmation email to info@blueprintexteriorsllc.com. Open that email and confirm it to activate submissions.
