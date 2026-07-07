@@ -3,139 +3,169 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Blueprint Exteriors LLC | Roofing, Siding, Windows & Exterior Remodeling NJ</title>
-  <meta name="description" content="Blueprint Exteriors LLC provides roofing, siding, windows, doors, gutters, decks, masonry and exterior remodeling across Northern New Jersey from Somerset County and north." />
+  <title>Blueprint Exteriors LLC | Roofing, Siding, Windows, Decks & Exterior Remodeling NJ</title>
+  <meta name="description" content="Blueprint Exteriors LLC provides premium exterior remodeling across North Jersey, including roofing, siding, windows, doors, decks, gutters, chimneys, masonry, and carpentry." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="assets/styles.css" />
 </head>
 <body>
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="Blueprint Exteriors home">
-      <span class="mark">BE</span>
-      <span><strong>Blueprint</strong><small>Exteriors LLC</small></span>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Blueprint Exteriors home">
+      <span class="brand-mark"><span>B</span><span>E</span></span>
+      <span class="brand-text">Blueprint <strong>Exteriors</strong></span>
     </a>
-    <nav class="desktop-nav">
+    <nav class="nav-links" aria-label="Main navigation">
       <a href="#services">Services</a>
       <a href="#projects">Projects</a>
-      <a href="#why">Why Us</a>
-      <a href="#areas">Areas</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#areas">Service Areas</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="phone" href="tel:9733625447">(973) 362-5447</a>
+    <div class="header-actions">
+      <a class="phone" href="tel:9733625447">(973) 362-5447</a>
+      <a class="btn btn-small" href="#quote">Get a Free Estimate</a>
+    </div>
   </header>
 
-  <main>
+  <main id="home">
     <section class="hero">
-      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/stone-home.jpg">
-        <source src="assets/video/hero.mp4" type="video/mp4" />
+      <video class="hero-video" autoplay muted loop playsinline poster="assets/images/project-stone.jpg">
+        <source src="assets/videos/hero-video.mp4" type="video/mp4">
       </video>
-      <div class="hero-shade"></div>
-      <div class="hero-content">
-        <p class="eyebrow">Exterior Remodeling • Northern New Jersey</p>
-        <h1>Northern New Jersey’s Trusted Exterior Remodeling Experts</h1>
-        <p class="hero-copy">Roofing, siding, windows, doors, gutters, decks, masonry, chimneys and carpentry built with clean workmanship and honest communication.</p>
-        <div class="hero-actions">
-          <a class="btn primary" href="#contact">Get a Free Estimate</a>
-          <a class="btn secondary" href="#projects">View Our Work</a>
+      <div class="hero-overlay"></div>
+      <div class="hero-grid container">
+        <div class="hero-copy">
+          <p class="eyebrow">North Jersey's Premier Exterior Contractor</p>
+          <h1>Built Better.<br><span>Built to Last.</span></h1>
+          <p class="hero-subtitle">Premium roofing, siding, windows, doors, decks, masonry, gutters, chimneys, and exterior renovations built with detail, communication, and pride.</p>
+          <div class="hero-buttons">
+            <a class="btn" href="#projects">View Our Projects</a>
+            <a class="btn btn-outline" href="tel:9733625447">Call Now</a>
+          </div>
+          <div class="trust-strip">
+            <span>Licensed & Insured</span>
+            <span>20+ Years Experience</span>
+            <span>Premium Materials</span>
+            <span>Workmanship Warranty</span>
+          </div>
         </div>
-        <div class="trust-row">
-          <span>Licensed & Insured</span>
-          <span>20+ Years Experience</span>
-          <span>Free Estimates</span>
-          <span>Quality Materials</span>
+        <aside id="quote" class="quote-card">
+          <p class="eyebrow">Get a Free Estimate</p>
+          <h2>Request a Quote</h2>
+          <p>Tell us about your project and we'll get back to you quickly.</p>
+          <form action="mailto:info@blueprintexteriorsllc.com" method="post" enctype="text/plain">
+            <div class="form-row">
+              <input name="name" placeholder="Full Name" required>
+              <input name="phone" placeholder="Phone Number" required>
+            </div>
+            <input name="email" type="email" placeholder="Email Address">
+            <select name="service" required>
+              <option value="">Service Needed</option>
+              <option>Roofing</option>
+              <option>Siding</option>
+              <option>Windows / Doors</option>
+              <option>Decks</option>
+              <option>Gutters</option>
+              <option>Chimney / Masonry</option>
+              <option>Other Exterior Work</option>
+            </select>
+            <textarea name="message" rows="4" placeholder="Project Details"></textarea>
+            <button class="btn btn-full" type="submit">Send Request</button>
+          </form>
+          <a class="quote-phone" href="tel:9733625447">☎ (973) 362-5447</a>
+        </aside>
+      </div>
+    </section>
+
+    <section id="services" class="section services-section">
+      <div class="container section-heading center">
+        <p class="eyebrow">Our Services</p>
+        <h2>Complete Exterior Solutions</h2>
+      </div>
+      <div class="container services-grid">
+        <article><div class="icon">⌂</div><h3>Roofing</h3><p>Roof replacements and repairs designed to protect your home.</p></article>
+        <article><div class="icon">▤</div><h3>Siding</h3><p>Durable siding systems that transform curb appeal.</p></article>
+        <article><div class="icon">□</div><h3>Windows</h3><p>Energy-efficient windows that improve comfort and style.</p></article>
+        <article><div class="icon">▯</div><h3>Doors</h3><p>Secure entry, patio, and exterior door installations.</p></article>
+        <article><div class="icon">╦</div><h3>Decks</h3><p>Custom decks and railings for outdoor living.</p></article>
+        <article><div class="icon">▦</div><h3>Masonry</h3><p>Stone, brick, chimneys, steps, and exterior masonry work.</p></article>
+        <article><div class="icon">▱</div><h3>Gutters</h3><p>Seamless gutter systems built to manage water properly.</p></article>
+        <article><div class="icon">▥</div><h3>Chimneys</h3><p>Chimney repairs and rebuilds that keep your home safe.</p></article>
+      </div>
+    </section>
+
+    <section id="projects" class="section dark-section">
+      <div class="container split-title">
+        <div>
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Built With Pride</h2>
         </div>
+        <a href="#quote" class="text-link">Request Similar Work →</a>
+      </div>
+      <div class="container projects-grid">
+        <article class="project-card"><img src="assets/images/project-stone.jpg" alt="Stone and siding exterior renovation"><div><h3>Exterior Renovation</h3><p>Stone, siding, windows & curb appeal</p></div></article>
+        <article class="project-card"><img src="assets/images/project-deck.jpg" alt="Deck and paver patio project"><div><h3>Deck & Outdoor Living</h3><p>Deck, railings, pavers & backyard upgrade</p></div></article>
+        <article class="project-card"><img src="assets/images/project-roof.jpg" alt="Roof replacement project in Wayne New Jersey"><div><h3>Roof Replacement</h3><p>Wayne, NJ</p></div></article>
+        <article class="project-card"><img src="assets/images/project-siding.jpg" alt="Finished siding and exterior trim project"><div><h3>Siding & Trim</h3><p>Modern siding with clean trim details</p></div></article>
+        <article class="project-card"><img src="assets/images/project-front.jpg" alt="Finished residential exterior project"><div><h3>Full Exterior Upgrade</h3><p>Roofing, siding, gutters & finish details</p></div></article>
       </div>
     </section>
 
-    <section class="intro split">
-      <div>
-        <p class="eyebrow blue">Blueprint Exteriors LLC</p>
-        <h2>Premium exterior renovations that improve curb appeal, protection and long-term value.</h2>
-      </div>
-      <p>We help homeowners throughout North Jersey upgrade the outside of their homes with dependable crews, clean project management and a finished result that looks sharp from every angle.</p>
-    </section>
-
-    <section class="services" id="services">
-      <div class="section-head">
-        <p class="eyebrow blue">What We Do</p>
-        <h2>Exterior services built around quality and detail.</h2>
-      </div>
-      <div class="service-grid">
-        <article><span>01</span><h3>Roofing</h3><p>Roof replacements, repairs, flashing, ventilation and leak prevention.</p></article>
-        <article><span>02</span><h3>Siding</h3><p>Vinyl, composite, shake, board-and-batten and full exterior transformations.</p></article>
-        <article><span>03</span><h3>Windows & Doors</h3><p>Replacement windows, entry doors, patio doors and clean exterior trim work.</p></article>
-        <article><span>04</span><h3>Decks</h3><p>Composite decking, railings, stairs, framing repairs and outdoor living upgrades.</p></article>
-        <article><span>05</span><h3>Gutters</h3><p>Gutter replacement, fascia repair, drainage corrections and gutter protection.</p></article>
-        <article><span>06</span><h3>Masonry & Chimneys</h3><p>Chimney repairs, stonework, veneer, steps, walls and exterior masonry details.</p></article>
-      </div>
-    </section>
-
-    <section class="showcase" id="projects">
-      <div class="section-head light">
-        <p class="eyebrow">Featured Work</p>
-        <h2>Real projects. Real craftsmanship.</h2>
-      </div>
-      <div class="project-grid">
-        <a class="project large" href="#contact"><img src="assets/images/stone-home.jpg" alt="Stone front exterior renovation by Blueprint Exteriors"><div><span>Exterior Remodel</span><strong>Stone, siding and roof curb appeal upgrade</strong></div></a>
-        <a class="project" href="#contact"><img src="assets/images/deck-drone.jpg" alt="Deck and paver project aerial view"><div><span>Decks & Hardscape</span><strong>Outdoor living space with deck and pavers</strong></div></a>
-        <a class="project" href="#contact"><img src="assets/images/roof-wayne.jpg" alt="Roof replacement in Wayne New Jersey"><div><span>Roofing</span><strong>Roof replacement in Wayne, NJ</strong></div></a>
-        <a class="project" href="#contact"><img src="assets/images/siding-chimney.jpg" alt="Finished siding project with chimney"><div><span>Siding</span><strong>Clean siding and trim detail</strong></div></a>
-        <a class="project" href="#contact"><img src="assets/images/in-progress.jpg" alt="Exterior siding project in progress"><div><span>In Progress</span><strong>Real jobsite progress and installation</strong></div></a>
-      </div>
-    </section>
-
-    <section class="why" id="why">
-      <div class="image-card"><img src="assets/images/sunset-home.jpg" alt="Finished residential exterior project at sunset"></div>
+    <section id="why-us" class="why-section">
       <div class="why-copy">
-        <p class="eyebrow blue">Why Homeowners Choose Us</p>
-        <h2>A contractor experience that feels organized from estimate to cleanup.</h2>
-        <div class="check-list">
-          <p><strong>Detailed estimates.</strong> Clear scope, materials and expectations before work begins.</p>
-          <p><strong>Professional crews.</strong> Experienced exterior specialists who respect your property.</p>
-          <p><strong>Clean job sites.</strong> Daily cleanup and protection of landscaping, walkways and driveways.</p>
-          <p><strong>Built to last.</strong> Proper installation methods, flashing details and quality materials.</p>
+        <p class="eyebrow">Why Choose Blueprint Exteriors?</p>
+        <h2>Quality you can see. Service you can trust.</h2>
+        <p>From the first call to the final cleanup, we deliver a smooth exterior remodeling experience with clear communication, quality materials, and dependable crews.</p>
+        <div class="check-grid">
+          <span>✓ Clear Communication</span>
+          <span>✓ On-Time & On-Budget</span>
+          <span>✓ Expert Craftsmanship</span>
+          <span>✓ Premium Materials</span>
+          <span>✓ Workmanship Warranty</span>
+          <span>✓ Respectful Job Sites</span>
         </div>
       </div>
+      <img src="assets/images/project-front.jpg" alt="Blueprint Exteriors finished home project">
     </section>
 
-    <section class="areas" id="areas">
-      <p class="eyebrow blue">Service Areas</p>
-      <h2>Serving Somerset County and North Jersey.</h2>
-      <p>Blueprint Exteriors serves homeowners across Somerset County and north, including Bergen, Passaic, Morris, Essex, Union, Hudson, Warren and Sussex counties.</p>
-      <div class="county-list">
-        <span>Somerset County</span><span>Bergen County</span><span>Passaic County</span><span>Morris County</span><span>Essex County</span><span>Union County</span><span>Hudson County</span><span>Warren County</span><span>Sussex County</span>
+    <section id="reviews" class="section reviews-section">
+      <div class="container section-heading center">
+        <p class="eyebrow">What Our Clients Say</p>
+        <h2>5-Star Service. 5-Star Results.</h2>
+      </div>
+      <div class="container review-grid">
+        <article><div class="stars">★★★★★</div><p>Blueprint Exteriors exceeded our expectations. The team was professional, clean, and the results speak for themselves.</p><strong>— Homeowner</strong></article>
+        <article><div class="stars">★★★★★</div><p>Great communication, fair pricing, and amazing work. The house looks completely updated.</p><strong>— North Jersey Client</strong></article>
+        <article><div class="stars">★★★★★</div><p>High-quality exterior work and a very smooth process from estimate to completion.</p><strong>— Residential Customer</strong></article>
       </div>
     </section>
 
-    <section class="contact" id="contact">
-      <div>
-        <p class="eyebrow">Free Estimate</p>
-        <h2>Ready to upgrade your exterior?</h2>
-        <p>Call Blueprint Exteriors or send your project details. We’ll review your scope and follow up to schedule an estimate.</p>
-        <a class="big-phone" href="tel:9733625447">(973) 362-5447</a>
+    <section id="areas" class="section areas-section">
+      <div class="container area-box">
+        <div>
+          <p class="eyebrow">Areas We Serve</p>
+          <h2>Serving Somerset County and North Jersey</h2>
+          <p>Blueprint Exteriors LLC serves homeowners throughout Somerset County and north, including Bergen, Passaic, Morris, Essex, Union, Hudson, Sussex, Warren, and surrounding areas.</p>
+        </div>
+        <a class="btn" href="#quote">Get a Free Estimate</a>
       </div>
-      <form class="estimate-form" action="mailto:blueprintexteriorsllc@gmail.com" method="post" enctype="text/plain">
-        <input name="name" placeholder="Name" required>
-        <input name="phone" placeholder="Phone" required>
-        <input name="email" placeholder="Email">
-        <input name="address" placeholder="Project address / town">
-        <select name="service">
-          <option>Roofing</option><option>Siding</option><option>Windows / Doors</option><option>Decks</option><option>Gutters</option><option>Masonry / Chimney</option><option>Other</option>
-        </select>
-        <textarea name="message" placeholder="Tell us about your project" rows="5"></textarea>
-        <button type="submit">Request Estimate</button>
-        <small>Form opens your email app for now. We can connect this to direct email submissions later.</small>
-      </form>
     </section>
   </main>
 
-  <a class="mobile-call" href="tel:9733625447">Call (973) 362-5447</a>
-  <footer>
-    <strong>Blueprint Exteriors LLC</strong>
-    <span>Roofing • Siding • Windows • Doors • Decks • Gutters • Masonry • Chimneys</span>
-    <span>Serving Somerset County and North Jersey</span>
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="brand footer-brand" href="#home"><span class="brand-mark"><span>B</span><span>E</span></span><span class="brand-text">Blueprint <strong>Exteriors</strong></span></a>
+        <p>Premium exterior remodeling across North Jersey.</p>
+      </div>
+      <div><h3>Services</h3><p>Roofing<br>Siding<br>Windows & Doors<br>Decks<br>Masonry<br>Gutters & Chimneys</p></div>
+      <div><h3>Contact</h3><p><a href="tel:9733625447">(973) 362-5447</a><br><a href="mailto:info@blueprintexteriorsllc.com">info@blueprintexteriorsllc.com</a></p></div>
+      <div><h3>Service Areas</h3><p>Somerset County and north throughout New Jersey.</p></div>
+    </div>
+    <div class="copyright">© 2026 Blueprint Exteriors LLC. All rights reserved.</div>
   </footer>
 </body>
 </html>
