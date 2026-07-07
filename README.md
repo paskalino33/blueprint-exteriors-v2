@@ -1,15 +1,28 @@
-# Blueprint Exteriors Homepage Update V3
+# Blueprint Exteriors Homepage V5 — Resend Quote Form
 
-Static website. No npm and no Next.js build.
+This version connects the quote form to a Vercel serverless function at `/api/quote` and sends leads with Resend to:
 
-Vercel settings:
-- Framework Preset: Other
-- Install Command: leave blank
-- Build Command: leave blank
-- Output Directory: .
+lino@londonlcs.com
 
-## Contact Form
-The quote form is currently set to FormSubmit:
-`https://formsubmit.co/info@blueprintexteriorsllc.com`
+## Required Vercel Environment Variable
 
-After deploying, submit a test form once. FormSubmit will send a confirmation email to info@blueprintexteriorsllc.com. Open that email and confirm it to activate submissions.
+In Vercel, go to Project → Settings → Environment Variables and add:
+
+RESEND_API_KEY = your Resend API key
+
+Optional, after verifying your domain in Resend:
+
+RESEND_FROM = Blueprint Exteriors <leads@blueprintexteriorsnj.com>
+
+If RESEND_FROM is not set, this build uses Resend's onboarding sender.
+
+## Vercel Settings
+
+Framework Preset: Other
+Install Command: blank
+Build Command: blank
+Output Directory: .
+
+## Upload
+
+Upload the contents inside this folder to GitHub, not the folder itself.
