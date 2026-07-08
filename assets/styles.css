@@ -10,3 +10,22 @@
 .form-status.success { color: #3cff9a; }
 .form-status.error { color: #ff7a7a; }
 button:disabled { opacity: .65; cursor: not-allowed; }
+.photo-services-grid article {
+  min-height: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  background-image: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,.25)), var(--bg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  padding: 28px;
+  color: white;
+}
+
+.photo-services-grid article h3,
+.photo-services-grid article p {
+  position: relative;
+  z-index: 2;
+}
