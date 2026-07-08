@@ -29,3 +29,9 @@ button:disabled { opacity: .65; cursor: not-allowed; }
   position: relative;
   z-index: 2;
 }
+.photo-services-grid article {
+  background: linear-gradient(to top, rgba(0,0,0,.85), rgba(0,0,0,.15)), var(--bg) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+}
