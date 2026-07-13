@@ -285,7 +285,13 @@
           if (!response.ok) {
             throw new Error(result.error || 'Something went wrong.');
           }
-
+          
+          if (typeof gtag === 'function') {
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18306930154/1AfoCNGs6cOcEOqrtplE'
+  });
+}
+  
           quoteForm.reset();
           quoteStatus.textContent = 'Thank you. Your request was sent successfully.';
           quoteStatus.className = 'form-status success';
